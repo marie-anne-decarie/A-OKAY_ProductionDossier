@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-OKAY</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="intro">
+
+    <div>           
+        <h2>˗ˋˎ ✦ ˎˊ˗</h2>
+        <h1>A-OKAY</h1>
+        <h2>Production dossier by Marie-Anne Décarie</h2>   
+        <p>everything's gonna be A-OKAY. Are you ready for it?</p>
+
+        <form id="passwordForm">
+        <label for="password">(type yes to enter) </label>
+        <input type="password" id="password" required>
+        <button type="submit">enter</button>
+        </form>
+
+        <h3 id="message"></h3>
+    </div>
+
+    </section> 
+
+    <div class="filtr"></div>
+
+    <video autoplay muted loop poster="images/Stills/3.jpg">
+        <source src="videos/5secTest.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+
+      <script>
+        // The correct password
+        const correctPassword = "yes";
+
+        // Select elements using querySelector
+        const passwordForm = document.querySelector("#passwordForm");
+        const passwordInput = document.querySelector("#password");
+        const messageParagraph = document.querySelector("#message");
+
+        passwordForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            // Using let for variables that might change
+            let password = passwordInput.value;
+
+            // Check if the password is correct
+            if (password === correctPassword) {
+                window.location.href = "home.html"; // Redirect to new page
+            } else {
+                messageParagraph.textContent = "type yes to enter!";
+                messageParagraph.style.color = "#BF281B";
+            }
+        });
+    </script>
+
+    
+</body>
+</html>
