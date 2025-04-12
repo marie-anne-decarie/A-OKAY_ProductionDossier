@@ -2,13 +2,13 @@ const sparkle = document.querySelector('#home');
 
 function toggleMenu() {
   var element = document.getElementById("overlay");
-  if (element.style.height == "50vh") {
+  if (element.style.height == "auto") {
       element.style.height = "0";
       sparkle.style.color = "#333"
       sparkle.style.padding = "0";
       // sparkle.classList.remove('wings');
   } else {
-      element.style.height = "50vh";
+      element.style.height = "auto";
       sparkle.style.color = "#88F2E8";
       sparkle.style.padding = "0 2em";
       // sparkle.classList.add('wings');
