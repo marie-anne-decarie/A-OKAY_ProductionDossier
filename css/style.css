@@ -264,6 +264,14 @@ li{
 
 }
 
+.wings::after{
+    content:" ˎˊ˗";
+}
+
+.wings::before{
+    content: "˗ˋˎ ";
+}
+
 
 footer{
     width: 100vw;
@@ -315,6 +323,10 @@ footer{
 
     .filtr{
         background-color: #1C4AA6;
+    }
+
+    #notes img{
+        max-width: 800px;
     }
 
     
