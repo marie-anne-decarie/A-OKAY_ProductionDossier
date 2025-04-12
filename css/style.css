@@ -90,13 +90,7 @@ h1{
     margin: 0;
 }
 
-#gotop{
-    font-size: 18px;
-    padding: 0;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-}
+
 
 header{
     background-color: white;
@@ -256,6 +250,17 @@ li{
     justify-content: center;    
     background-color: #bef0eb;
 }
+
+#gotop:link{
+    font-size: 18px;
+    padding: 0;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    width:40px;
+}
+
+
 
 .calendar-row{
     height: 2.5em;
